@@ -244,7 +244,9 @@ const DominoGame: React.FC = () => {
                         className="w-[100px] h-[200px] bg-white rounded-lg shadow-lg"
                         style={{
                           backgroundImage: `url(${domino.image})`,
-                          backgroundSize: 'cover',
+                          backgroundSize: 'cover',      /* Hace que la imagen cubra todo el div */
+                          background-position: 'center';   /* Centra la imagen dentro del div */
+                          background-repeat: 'no-repeat';  /* Evita que la imagen se repita */
                           ...provided.draggableProps.style
                         }}
                       />
