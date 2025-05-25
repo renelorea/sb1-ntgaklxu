@@ -12,7 +12,7 @@ const initialDominoes: Domino[] = Array.from({ length: 28 }, (_, i) => {
     id: `${top}-${bottom}`,
     top,
     bottom,
-    image: `/src/data/img/${top}${bottom}.jpg`,
+    image: `/src/data/img/serie_${top}_${bottom}.png`,
     position: { x: 0, y: 0 }
   };
 });
