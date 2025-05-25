@@ -7,7 +7,7 @@ const DOMINO_HEIGHT = 200;
 
 const initialDominoes: Domino[] = Array.from({ length: 28 }, (_, i) => {
   const top = Math.floor(i / 7);
-  const bottom = (i % 7) + (top + 1);
+  const bottom = Math.min((i % 7) + (top + 1),7);
   return {
     id: `${top}-${bottom}`,
     top,
