@@ -245,7 +245,6 @@ const DominoGame: React.FC = () => {
                         style={{
                           backgroundImage: `url(${domino.image})`,
                           backgroundSize: 'cover',
-                          backgroundSize: 'cover',
                           backgroundPosition: 'center',
                           backgroundRepeat: 'no-repeat',
                           ...provided.draggableProps.style
